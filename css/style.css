@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+header {
+  display: flex;
+  min-width: 0;
+  align-content: center;
+  background-color: rgb(64, 64, 64);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subBanner {
+  display: flex;
+  flex: 1;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.featureSection {
+  display: flex;
+  flex: 1;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.featureBannerImage {
+  width: 50%;
+}
+
+.featureSectionColumn {
+  display: flex;
+  flex-direction: column;
+}
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+button {
+  color: white;
+  background-color: black;
+  transition: 0.35s;
+}
+
+button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+footer {
+  background-color: rgb(64, 64, 64);
+  min-height: 70px;
+}
