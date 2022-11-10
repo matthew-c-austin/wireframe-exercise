@@ -2,12 +2,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
 header {
   display: flex;
   min-width: 0;
+  width: 100%;
+  flex-wrap: wrap;
   align-content: center;
   background-color: rgb(64, 64, 64);
 }
@@ -28,6 +31,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: 960px;
 }
 
 .subBanner {
@@ -39,19 +43,24 @@ main {
 
 .featureSection {
   display: flex;
-  flex: 1;
   gap: 30px;
   justify-content: space-between;
 }
 
-.featureBannerImage {
-  width: 50%;
+.featureSectionImage {
+  min-width: 50%;
 }
-
 .featureSectionColumn {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
+
+.featureSectionColumn p {
+  overflow: auto;
+  height: 300px;
+}
+
 h4 {
   font-size: 1.25rem;
   font-weight: bold;
@@ -61,13 +70,17 @@ button {
   color: white;
   background-color: black;
   transition: 0.35s;
+  align-self: start;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 button:hover {
   background-color: lightgrey;
   color: black;
 }
+
 footer {
   background-color: rgb(64, 64, 64);
   min-height: 70px;
+  width: 100%;
 }
